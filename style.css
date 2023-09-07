@@ -1,16 +1,92 @@
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
-h1 {
-  color: red;
-  background-color: blue;
-  font-family: serif;
+.header {
+  background-color: grey;
+  overflow: auto;
+  padding: 10px;
 }
 
-p {
-  color: yellow;
-  font-size: 20px;
-  font-family: "Lucida Grande";
+.website-title {
+  float: left;
+  font-size: 30px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-right: 100px;
+}
+
+.menu {
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  text-decoration: none;
+}
+
+.menu li {
+  list-style: none;
+  display: inline;
+}
+
+.menu a {
+  color: white;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  padding: 0 10px;
+  border-right: 2px solid white;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  font-weight: 700;
+  color: black;
+}
+
+.menu a.python-link {
+  border: none;
+}
+
+.profile-img {
+  height: 30px;
+  width: 30px;
+  float: right;
+  border-radius: 100%;
+}
+
+.body {
+  height: calc(100vh - 90px);
+  background-color: rgb(201, 233, 244);
+}
+
+.body .running-text {
+  background-color: black;
+  padding: 5px 10px;
+}
+
+.body marquee {
+  color: white;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body h1 {
+  margin: 0 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer {
+  background-color: grey;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+}
+
+.footer span {
+  color: black;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
