@@ -6,7 +6,7 @@
 .header {
   background-color: grey;
   overflow: auto;
-  padding: 10px;
+  padding: 10px 50px 10px;
 }
 
 .website-title {
@@ -15,11 +15,10 @@
   color: white;
   font-family: sans-serif;
   font-weight: 700;
-  margin-right: 100px;
 }
 
 .menu {
-  float: left;
+  float: right;
   height: 35px;
   line-height: 35px;
   text-decoration: none;
@@ -45,38 +44,77 @@
   color: black;
 }
 
-.menu a.python-link {
+.menu a.docs-link {
   border: none;
 }
 
-.profile-img {
-  height: 30px;
-  width: 30px;
-  float: right;
-  border-radius: 100%;
-}
-
-.body {
-  height: calc(100vh - 90px);
+/* CSS FOR CONTENT */
+.content {
+  min-height: 100vh;
   background-color: rgb(201, 233, 244);
+  overflow: auto;
+  padding: 30px 0;
 }
 
-.body .running-text {
-  background-color: black;
-  padding: 5px 10px;
+.content-header {
+  width: calc(1200px + 20px + 20px);
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.body marquee {
-  color: white;
-  font-weight: 600;
+.content-header h1 {
+  color: grey;
+  text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.body h1 {
-  margin: 0 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.content-header p {
+  margin: 5px 0 30px;
+  text-align: center;
+  font-size: 25px;
 }
 
+.content-main {
+  overflow: auto;
+  width: calc(1200px + 20px + 20px + 3px);
+  margin: 0 auto;
+}
+
+.content-main-item {
+  float: left;
+  width: 400px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.content-main-item:hover {
+  cursor: pointer;
+}
+
+.content-main-item.second {
+  margin: 0 20px;
+}
+
+.content-main-item img {
+  max-width: calc(397px - 10px);
+  margin-bottom: 10px;
+}
+
+.content-main-item h3 {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+  margin: 10px 0 5px;
+  color: grey;
+  font-size: 28px;
+}
+
+.content-main-item p {
+  text-align: center;
+}
+
+/* CCS FOR FOOTER */
 .footer {
   background-color: grey;
   height: 35px;
