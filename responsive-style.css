@@ -1,2 +1,7 @@
 /* This style to responsive css*/
-@media() {}
+
+/* This is for ipad or tablet screen */
+@media(max-width: 1000px) {}
+
+/* This is for phone screen */
+@media(max-width: 671px) {}
