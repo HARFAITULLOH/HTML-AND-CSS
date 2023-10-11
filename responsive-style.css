@@ -1,7 +1,17 @@
 /* This style to responsive css*/
 
 /* This is for ipad or tablet screen */
-@media(max-width: 1000px) {}
+/* @media (max-width: 1000px) {
+} */
 
 /* This is for phone screen */
-@media(max-width: 671px) {}
+@media only screen and (max-width: 800px) {
+  .content-main {
+    flex-direction: column;
+  }
+
+  .content-main-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
