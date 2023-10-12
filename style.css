@@ -4,24 +4,20 @@
 }
 
 .header {
+  position: fixed;
+  right: 0;
+  left: 0;
   background-color: grey;
-  overflow: auto;
   padding: 10px 50px 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .website-title {
-  float: left;
   font-size: 30px;
   color: white;
   font-family: sans-serif;
   font-weight: 700;
-}
-
-.menu {
-  float: right;
-  height: 35px;
-  line-height: 35px;
-  text-decoration: none;
 }
 
 .menu li {
@@ -51,7 +47,7 @@
 /* CSS FOR CONTENT */
 .content {
   min-height: 100vh;
-  background-color: rgb(201, 233, 244);
+  background-color: rgb(191, 192, 193);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,8 +55,9 @@
 
 .content-header {
   max-width: 1200px;
-  padding: 0 20px;
+  padding: 20px 20px;
   box-sizing: border-box;
+  margin-top: 50px;
 }
 
 .content-header h1 {
@@ -81,23 +78,43 @@
   justify-content: space-between;
   padding: 0 20px;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .content-main-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 32%;
   background-color: white;
   box-sizing: border-box;
   padding: 5px;
   border-radius: 10px;
-}
-
-.content-main-item:hover {
-  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .content-main-item img {
   max-width: 100%;
   margin-bottom: 10px;
+}
+
+.content-main-item a {
+  background-color: grey;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.content-main-item a:hover {
+  background-color: black;
+  font-weight: 600;
 }
 
 .content-main-item h3 {
@@ -123,7 +140,5 @@
 }
 
 .footer span {
-  color: black;
-  font-weight: 600;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(230, 70, 97);
 }
